@@ -1,8 +1,10 @@
 #!/bin/bash
 
 #This Script shall install required drivers on the clusters
-# password=`cat parameters.json | jq -r '.parameters.clusterLoginPassword.value'`
-# username=`cat parameters.json | jq -r '.parameters.clusterLoginUserName.value'`
 
 cd ~/
-echo 'Hello World'
+https://github.com/tush4r/RawScript.git
+cd RawScript/
+HDP_PATH=$(ls -d /usr/hdp/* | head -n 1)
+SQOOP_PATH=$HDP_PATH/sqoop/lib/
+sudo cp ojdbc6.jar $SQOOP_PATH
